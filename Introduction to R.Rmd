@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
-date: "May 14, 2020"
+author: "Muhammad Zubair Islam"
+date: "April 14, 2022"
 output: html_document
 ---
 
@@ -23,7 +23,48 @@ output: html_document
 
 
 ```{r }
-#### Start solution ####
+#### 1. A vector containing each letter of your first name as its elements. 
+
+x <- c("M", "U","H","A","M","M","M","A","D","Z","U","B","A","I","R")
+print(x)
+x <- x[0:15]
+print(x)
+
+##### 2. A variable that contains your name concatenated from the vector created in (1)  
+
+v_name=as.character(x)
+v_name
+
+
+
+#3. A variable containing a sequence from 100 to 120.
+
+x <- (100:120)
+print(x)
+
+a <-(2:18:2)
+a
+#### 4. Create a matrix of 3x3 dimensions that contains the even sequence of numbers starting from 2. 
+a <- (1:20)
+m <-matrix((a[a%%2==0]),nrow = 3, ncol = 3)
+print(m)
+dim(m)
+attributes(m)
+
+#dim(m)<-c(3,2)
+#m
+
+
+m <-matrix(2:18,nrow = 3, ncol = 3)
+print(m)
+dim(m)
+attributes(m)
+
+## 5. Assign names to the variables.  
+
+
+
+
 ```
 
 
